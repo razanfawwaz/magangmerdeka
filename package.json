@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.35.2",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.6",
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
   }
 }
