@@ -1,15 +1,12 @@
 import Navbar from "./component/navbar";
-import Head from "next/head";
 import MagangLists from "./magang";
 import Footer from "./component/footer";
+import Header from "./component/Header";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Magang Kampus Merdeka</title>
-        <meta />
-      </Head>
+      <Header />
       <Navbar />
       <div className="bg-black">
         <div className="max-w-6xl mx-auto px-4 py-4">
