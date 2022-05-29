@@ -1,4 +1,4 @@
-import magangData from "./data";
+import magangData from "./magang-api";
 
 export default function handler(req, res) {
   const { method } = req;

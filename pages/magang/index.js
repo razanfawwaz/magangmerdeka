@@ -11,6 +11,8 @@ export default function App() {
     setVisible((prevValue) => prevValue + 4);
   };
 
+  const apiUrl = "https://kampusmerdeka.kemdikbud.go.id/program/magang/browse/";
+
   //fungsi mem-fecth data dari API atau Json file
   const getDataPosts = async () => {
     setLoading(true);
@@ -43,7 +45,7 @@ export default function App() {
               <img
                 src={magangData.logo}
                 alt={magangData.mitra_name}
-                className="rounded-full w-10 pt-2"
+                className="w-12 pt-2"
               />
               <h1 className="text-white text-2xl mt-4">
                 {magangData.position}
@@ -59,6 +61,17 @@ export default function App() {
               </p>
               <p className="text-gray-400 text-lg mt-2">
                 Location: {magangData.location}
+              </p>
+              <p className="text-gray-400 text-lg mt-2">
+                Requirements:{" "}
+                <a
+                  href={`https://kampusmerdeka.kemdikbud.go.id/program/magang/browse/${magangData.mitra_id}/${magangData.id}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline underline-offset-2"
+                >
+                  Check Requirements
+                </a>
               </p>
             </div>
           ))}
